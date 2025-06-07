@@ -1,9 +1,37 @@
-﻿namespace Module_1_Review___Area_Calculator;
-
-class Program
+﻿namespace MethodsExercise
 {
-    static void Main(string[] args)
+    public class Program
     {
-        Console.WriteLine("Hello, World!");
+
+        public static void CircleAreaCalculation()
+        {
+
+        }
+
+        public static void TriangleAreaCalculation()
+        {
+
+        }
+
+        public static void RectangleAreaCalculation()
+        {
+
+        }
+
+        public static void SquareAreaCalculation()
+        {
+
+        }
+
+        static void Main(string[] args)
+        {
+            
+            Console.WriteLine("Calculator Activated");
+            CircleAreaCalculation();
+            TriangleAreaCalculation();
+            RectangleAreaCalculation();
+            SquareAreaCalculation();
+           Console.WriteLine("Calculator Deactivated. Have a nice day.");
+        }
     }
 }
