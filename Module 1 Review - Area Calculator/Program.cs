@@ -10,6 +10,7 @@ namespace MethodsExercise
             Console.WriteLine("Enter Radius");
             double Radius = double.Parse(Console.ReadLine());
             Console.WriteLine($"Circle Area = {Math.PI * (Radius*Radius)}");
+            ContinueCheck();
         }
 
         public static void TriangleAreaCalculation()
@@ -20,6 +21,7 @@ namespace MethodsExercise
             Console.WriteLine("Enter Height");
             double Height = double.Parse(Console.ReadLine());
             Console.WriteLine($"Triangle Area = {baseLength * Height / 2}");
+            ContinueCheck();
         }
 
         public static void RectangleAreaCalculation()
@@ -30,6 +32,7 @@ namespace MethodsExercise
             Console.WriteLine("Enter Width");
             double Width = double.Parse(Console.ReadLine());
             Console.WriteLine($"Rectangle Area = {Length * Width}");
+            ContinueCheck();
         }
 
         public static void SquareAreaCalculation()
@@ -38,6 +41,7 @@ namespace MethodsExercise
             Console.WriteLine("Enter side length");
             double sideLength = double.Parse(Console.ReadLine());
             Console.WriteLine($"Square Area = {sideLength * sideLength}");
+            ContinueCheck();
         }
         
         public static void SelectShape()
@@ -90,7 +94,6 @@ namespace MethodsExercise
             Console.WriteLine("Calculator Activated");
             Console.WriteLine("Welcome to the Shape Area Calculator by Matthew D. Yglesias.");
             SelectShape();
-            ContinueCheck();
             Console.WriteLine("Calculator Deactivated. Have a nice day.");
         }
     }

@@ -8,7 +8,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7c162cde-3574-4991-a7ea-0bf010499dc6" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Module 1 Review - Area Calculator/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Module 1 Review - Area Calculator/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Module 1 Review - Area Calculator/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module 1 Review - Area Calculator/Program.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -79,7 +78,7 @@
       <updated>1749319901606</updated>
       <workItem from="1749319903548" duration="900000" />
       <workItem from="1749321078314" duration="2507000" />
-      <workItem from="1749345627713" duration="1309000" />
+      <workItem from="1749345627713" duration="1532000" />
     </task>
     <servers />
   </component>
