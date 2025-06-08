@@ -39,16 +39,59 @@ namespace MethodsExercise
             double sideLength = double.Parse(Console.ReadLine());
             Console.WriteLine($"Square Area = {sideLength * sideLength}");
         }
+        
+        public static void SelectShape()
+        {
+            Console.WriteLine("Please tell me your shape: Circle, Triangle, Rectangle, Square.");
+            string shape = Console.ReadLine().Trim().ToLower();
+
+            switch (shape)
+            {
+                case "circle":
+                    CircleAreaCalculation();
+                    break;
+                case "triangle":
+                    TriangleAreaCalculation();
+                    break;
+                case "rectangle":
+                    RectangleAreaCalculation();
+                    break;
+                case "square":
+                    SquareAreaCalculation();
+                    break;
+                default:
+                    Console.WriteLine("Invalid shape entered. Please try again.");
+                    SelectShape();
+                    break;
+            }
+        }
+
+        public static void ContinueCheck()
+        {
+            Console.WriteLine("Do you have more shapes to calculate?"); 
+            string YesNo = Console.ReadLine().Trim().ToLower();
+            switch (YesNo)
+            {
+                case "yes":
+                    SelectShape();
+                    break;
+                case "no":
+                    Console.WriteLine("Thank you for using the Shape Area Calculator by Matthew D. Yglesias.");
+                    break;
+                default:
+                    Console.WriteLine("Invalid input. Please try again.");
+                    ContinueCheck();
+                    break;
+            }
+        }
 
         static void Main(string[] args)
         {
-            
             Console.WriteLine("Calculator Activated");
-            CircleAreaCalculation();
-            TriangleAreaCalculation();
-            RectangleAreaCalculation();
-            SquareAreaCalculation();
-           Console.WriteLine("Calculator Deactivated. Have a nice day.");
+            Console.WriteLine("Welcome to the Shape Area Calculator by Matthew D. Yglesias.");
+            SelectShape();
+            ContinueCheck();
+            Console.WriteLine("Calculator Deactivated. Have a nice day.");
         }
     }
 }
